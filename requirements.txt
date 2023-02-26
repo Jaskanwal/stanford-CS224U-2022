@@ -1,0 +1,34 @@
+######################################################################
+# The requirements installed in this block are met by using Anaconda.
+# Only people working in their own virtual environments should install
+# them via this script.
+#
+# numpy>=1.20.0
+# scipy>=1.7.0
+# matplotlib>=3.4.0
+# scikit-learn>=1.0.2
+# nltk>=3.6.4
+# pytest>=4.0.0
+# jupyter>=1.0.0
+# pandas>=1.3.4
+
+
+######################################################################
+# PyTorch is required. For installation instructions, see
+#
+# https://pytorch.org/get-started/locally/
+#
+# For local usage, the followng should suffice
+#
+# conda install pytorch torchvision -c pytorch
+
+
+######################################################################
+# Required installs even for conda
+
+torch==1.10.1
+torchvision==0.11.2
+transformers==4.17.0
+datasets==2.0.0
+spacy
+gitpython
