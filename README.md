@@ -21,3 +21,17 @@ using any data you wish. In the assignment solution, this system is designed by 
 arrive at low-dimensional embeddings of the word count vectors, in conjunction with performing 
 [Positive Pointwise Mutual Information (PPMI)](https://en.wikipedia.org/wiki/Pointwise_mutual_information) re-weighting 
 and LSA on raw co-existence count vectors before generating AE embeddings. 
+
+## Assignment 2: [Sentiment Analysis](hw_sentiment.ipynb)
+This homework and associated bakeoff are devoted to supervised sentiment analysis using the ternary 
+(positive/negative/neutral) version of the Stanford Sentiment Treebank (SST-3) as well as a new 
+dev/test dataset drawn from restaurant reviews. The homework questions ask you to implement some 
+baseline system, and the bakeoff challenge is to define a system that does well at both the SST-3 test 
+set and the new restaurant test set. Both are ternary tasks, and our central bakeoff score is the mean of 
+the macro-FI scores for the two datasets.
+
+As a part of this assignment a system analysis system is developed using BERT base for tokenization and getting
+the token embeddings. Then a bi-direction LSTM model with a classification head on its last hidden state is 
+trained for the sentiment analysis task. Optimal hyper-parameters of the model considering the LSTM hidden dimension,
+number of layers, bi-directional/uni-directional, and the classification head's activation function are identified
+by performing a grid search. More details on the model can be found in the [linked notebook](hw_sentiment.ipynb).
